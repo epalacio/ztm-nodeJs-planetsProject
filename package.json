@@ -1,0 +1,22 @@
+{
+  "name": "planetsproject",
+  "version": "1.0.0",
+  "description": "Kepler Exoplanet CSV parser project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epalacio/ztm-nodeJs-planetsProject.git"
+  },
+  "author": "Esteban Palacio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/epalacio/ztm-nodeJs-planetsProject/issues"
+  },
+  "homepage": "https://github.com/epalacio/ztm-nodeJs-planetsProject#readme",
+  "dependencies": {
+    "csv-parse": "^4.16.0"
+  }
+}
