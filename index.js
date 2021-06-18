@@ -4,6 +4,13 @@ const fs = require('fs');
 const results = [];
 
 fs.createReadStream('kepler_data.csv')
+    //pipe connects a readable stream source to a writable stream destination
+    .pipe(parse({
+        //identify the symbol used for comments
+        comment: '#',
+        //return each row as a js object with key-value pairs
+        columns: true,
+    }))
     //reading the data
     .on('data', (data) => {
         results.push(data);
